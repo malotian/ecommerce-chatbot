@@ -7,16 +7,24 @@
   "description": "e-commerce chatbot with product recommendations",
   "main": "app.js",
   "dependencies": {
-    "moltin": "^1.0.4",
-    "botbuilder": "^3.7.0",
+    "botbuilder": "^3.8.2",
+    "dotenv": "^4.0.0",
     "lodash": "^4.17.4",
+    "moltin": "^1.0.4",
+    "morgan": "^1.8.2",
     "request-promise-native": "^1.0.3",
-    "restify": "^4.3.0"
+    "restify": "^4.3.0",
+    "base64url": "^2.0.0",
+    "bluebird": "^3.5.0",
+    "dotenv-extended": "^1.0.4",
+    "stripe": "^4.15.1",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --debug app.js"
   },
   "keywords": [
     "ecommerce",

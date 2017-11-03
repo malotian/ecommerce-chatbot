@@ -1,3 +1,4 @@
+require('dotenv-extended').load();
 const request = require('request-promise-native');
 const _ = require('lodash');
 
@@ -74,6 +75,7 @@ module.exports = {
     },
 
     findVariantForProduct: function(productId, color, size) {
+        console.log(`search variant for '${productId}', '${color}', '${size}'`);
         return searchVariants(`$filter=productId eq '${productId}'`).then((variants) => {
             if (variants.length === 1 ) {
                 console.log(`Returning the only variant for ${productId}`);
